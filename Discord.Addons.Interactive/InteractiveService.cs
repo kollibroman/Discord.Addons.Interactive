@@ -113,8 +113,8 @@ namespace Discord.Addons.Interactive
             => _callbacks.Clear();
         
         private async Task HandleReactionAsync(Cacheable<IUserMessage, ulong> message, 
-            ISocketMessageChannel channel, 
-            SocketReaction reaction)
+        Cacheable<IMessageChannel, ulong> channel, 
+        SocketReaction reaction)
         {
             if (reaction.UserId == Discord.CurrentUser.Id) return;
             if (!(_callbacks.TryGetValue(message.Id, out var callback))) return;
@@ -132,7 +132,7 @@ namespace Discord.Addons.Interactive
                 default:
                     if (await callback.HandleCallbackAsync(reaction).ConfigureAwait(false))
                         RemoveReactionCallback(message.Id);
-                    break;
+                    break; 
             }
         }
 
