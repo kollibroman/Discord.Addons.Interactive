@@ -1,18 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Authors>foxbot</Authors>
+    <Authors>KollibroMan</Authors>
     
-    <PackageId>Discord.Addons.Interactive</PackageId>
+    <PackageDescription>Fork of Discord.Addons.Interactive, it is maintained and updated</PackageDescription>
+    <PackageId>Discord.Addons.Interactive.Maintained</PackageId>
     <PackageLicenseUrl>https://opensource.org/licenses/isc</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/foxbot/Discord.Addons.Interactive</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/kollibroman/Discord.Addons.Interactive</PackageProjectUrl>
     <PackageTags>discord;discord.net</PackageTags>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>git://github.com/foxbot/Discord.Addons.Interactive</RepositoryUrl>
+    <RepositoryUrl>git://github.com/kollibroman/Discord.Addons.Interactive</RepositoryUrl>
     <PackageIconUrl>https://github.com/foxbot/Discord.Addons.Interactive/raw/master/marketing/PackageLogo.png</PackageIconUrl>
 
     <VersionPrefix Condition=" '$(Version)' != '' ">$(Version)</VersionPrefix>
-    <VersionPrefix Condition=" '$(Version)' == '' ">0.0.0-dev</VersionPrefix>
+    <VersionPrefix Condition=" '$(Version)' == '' ">1.0.0</VersionPrefix>
 
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
